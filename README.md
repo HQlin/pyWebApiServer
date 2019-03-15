@@ -1,49 +1,48 @@
 # pyWebApiServer
 
-## ¹¤³Ì¼ò½é
+## å·¥ç¨‹ç®€ä»‹
 
-### python»ùÓÚjson-rpcµÄWebApiServer
+### pythonåŸºäºŽjson-rpcçš„WebApiServer
 
-## ¹¤³ÌÏê½â
+## å·¥ç¨‹è¯¦è§£
 
-- **¿ª·¢»·¾³**
+- **å¼€å‘çŽ¯å¢ƒ**
 	
-  > Win10 64Î» + Python 2.7.14
+  > Win10 64ä½ + Python 2.7.14
   
-- **ÏÂÔØÄ£¿é**
-	
-  > pip install jsonrpclib
-  > pip install pywin32
-  > pip install cx_Oracle
-  > pip install pymssql
-  > pip install pymysql
+- **ä¸‹è½½æ¨¡å—**
+  ```
+  pip install jsonrpclib
+  pip install pywin32
+  pip install cx_Oracle
+  pip install pymssql
+  pip install pymysql
+  ```
+- **ç›®å½•ç»“æž„** 
+  ```
+  --server    ç¨‹åº
+      |-config.ini    é…ç½®æ–‡ä»¶
+      |-jsonInterface.py    WebApiServerçš„å…·ä½“æŽ¥å£å®šä¹‰
+      |-jsonServer.py    jsonrpclibå°è£…
+      |-logger.py    æ—¥å¿—ç±»
+      |-PythonService.py    Windows pythonç¨‹åºæœåŠ¡è®¾ç½®
+      |-sqlConn.py    ä¸åŒæ•°æ®åº“çš„æ•°æ®åº“æ“ä½œå°è£…
+      |-Test.py    æµ‹è¯•å¯åŠ¨WebApiServer
+  ```
+- **Windows pythonç¨‹åºæœåŠ¡è®¾ç½®**
+  ```
+  å°†Python27\Lib\site-packages\win32è·¯å¾„ä¸‹çš„pythonservice.exeæ³¨å†Œä¸€ä¸‹
+  æ³¨å†Œå‘½ä»¤ï¼špythonservice.exe /register
 
-- **Ä¿Â¼½á¹¹** 
+  å®‰è£…æœåŠ¡ï¼š python PythonService.py install
+  å¯åŠ¨æœåŠ¡ï¼š python PythonService.py start
+  å…³é—­æœåŠ¡ï¼š python PythonService.py stop
+  é‡å¯æœåŠ¡ï¼š python PythonService.py restart
+  å¸è½½æœåŠ¡ï¼š python PythonService.py remove
+  ```
+## è”ç³»ä¿¡æ¯
 
-  >--server    ³ÌÐò
-
-        |-config.ini    ÅäÖÃÎÄ¼þ
-        |-jsonInterface.py    WebApiServerµÄ¾ßÌå½Ó¿Ú¶¨Òå
-        |-jsonServer.py    jsonrpclib·â×°
-        |-logger.py    ÈÕÖ¾Àà
-        |-PythonService.py    Windows python³ÌÐò·þÎñÉèÖÃ
-        |-sqlConn.py    ²»Í¬Êý¾Ý¿âµÄÊý¾Ý¿â²Ù×÷·â×°
-        |-Test.py    ²âÊÔÆô¶¯WebApiServer
-
-- **Windows python³ÌÐò·þÎñÉèÖÃ**
-	
-  > ½«Python27\Lib\site-packages\win32Â·¾¶ÏÂµÄpythonservice.exe×¢²áÒ»ÏÂ
-  > ×¢²áÃüÁî£ºpythonservice.exe /register
-
-  > °²×°·þÎñ£º python PythonService.py install
-  > Æô¶¯·þÎñ£º python PythonService.py start
-  > ¹Ø±Õ·þÎñ£º python PythonService.py stop
-  > ÖØÆô·þÎñ£º python PythonService.py restart
-  > Ð¶ÔØ·þÎñ£º python PythonService.py remove
-
-## ÁªÏµÐÅÏ¢
-
-> Address£º     **¹ãÖÝ**  
+> Addressï¼š     **å¹¿å·ž**  
 > Email:        [**SwimYanglin@foxmail.com**][email-addr]  
 > Github:       [**github.com/HQlin**][github-site]  
 
