@@ -28,6 +28,7 @@
       |-PythonService.py    Windows python程序服务设置
       |-sqlConn.py    不同数据库的数据库操作封装
       |-Test.py    测试启动WebApiServer
+  --deamon.py    linux的守护进程
   ```
 - **Windows python程序服务设置**
   ```
